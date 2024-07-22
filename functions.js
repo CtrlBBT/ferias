@@ -14,7 +14,7 @@ const adicionarAtividade = (dia, atividade) => {
 const listarAtividades = () => {
     atividades.forEach(diaAtividades => {
         console.log(`Dia: ${diaAtividades.dia}`);
-        let index = 1;
+        let index = 0;
         diaAtividades.atividades.forEach(atividade => {
             console.log(index + `  - ${atividade}`);
             index ++;

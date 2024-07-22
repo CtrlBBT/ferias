@@ -27,12 +27,14 @@ const main = () => {
                 break;
             case '3':
                 const diaAtualizar = prompt('Informe o dia da atividade a ser atualizada: ');
+                listarAtividades();
                 const indiceAtualizar = prompt('Informe o índice da atividade a ser atualizada: ');
                 const novaAtividade = prompt('Informe a nova atividade: ');
                 atualizarAtividade(diaAtualizar, parseInt(indiceAtualizar), novaAtividade);
                 break;
             case '4':
                 const diaDeletar = prompt('Informe o dia da atividade a ser deletada: ');
+                listarAtividades();
                 const indiceDeletar = prompt('Informe o índice da atividade a ser deletada: ');
                 deletarAtividade(diaDeletar, parseInt(indiceDeletar));
                 break;
